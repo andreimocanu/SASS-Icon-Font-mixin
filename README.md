@@ -2,9 +2,9 @@
 
 An easy to use mixin for generating icon fonts (font css and icon classes).
 
-A custom icon font requires many lines of codes and constant updates if you keep expending the project.
+If you use an app like iconmoon, you can export your code as SASS, but that code is not very optimized.
 
-I created a very handfull way of generating the code so you can save a lot of time.
+I created a very handful way of generating the code so you can save a lot of time.
 
 The mixin will generate 2 chunks of code:
 
@@ -12,11 +12,15 @@ The mixin will generate 2 chunks of code:
 2. The CSS classes used by the font
 
 <h3>Options</h3>
-<strong>$map</strong>    - the map that contains the font icons (variable)
-<strong>$class</strong>  - the font class name; ex: icon (string)
-<strong>$family</strong> - the font family name; ex: mocanu (string)
-<strong>$file</strong>   - the font files location; VERY IMPORTANT: please include the full path except the file extensions; the mixin will generate the code using the 4 @font-face formats: eot, ttf, woff and svg; ex: http://www.mywebsite.com/fonts/font-file (string)
-<strong>$cache</strong>  - the cache variable; should be updated everytime you make changes in the font file (string)
+<strong>$map</strong> - the map that contains the font icons
+
+<strong>$class</strong> - the font class name; ex: icon
+
+<strong>$family</strong> - the font family name; ex: mocanu
+
+<strong>$file</strong> - the font files location; VERY IMPORTANT: please include the full path except the file extensions; the mixin will generate the code using the 4 @font-face formats: eot, ttf, woff and svg; ex: http://www.mywebsite.com/fonts/font-file
+
+<strong>$cache</strong> - the cache variable; should be updated everytime you make changes in the font file
 
 All the icon classes are auto generated from the $font-icons map, so you only have to add them there.
 
