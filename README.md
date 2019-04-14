@@ -6,27 +6,17 @@ A custom icon font requires many lines of codes and constant updates if you keep
 
 I created a very handfull way of generating the code so you can save a lot of time.
 
-<h3>Usage</h3>
-
-<pre>
-$font-icons: (
-	icon1-name : icon1-code,
-	icon2-name : icon2-code,
-);
-@include font-icons($map, $class, $family, $file, $cache);
-</pre>
-
 The mixin will generate 2 chunks of code:
 
 1. The @font-face initialization
 2. The CSS classes used by the font
 
-Here are the 5 options:
-$map    - the map that contains the font icons (variable)
-$class  - the font class name; ex: icon (string)
-$family - the font family name; ex: mocanu (string)
-$file   - the font files location; VERY IMPORTANT: please include the full path except the file extensions; the mixin will generate the code using the 4 @font-face formats: eot, ttf, woff and svg; ex: http://www.mywebsite.com/fonts/font-file (string)
-$cache  - the cache variable; should be updated everytime you make changes in the font file (string)
+<h3>Options</h3>
+<strong>$map</strong>    - the map that contains the font icons (variable)
+<strong>$class</strong>  - the font class name; ex: icon (string)
+<strong>$family</strong> - the font family name; ex: mocanu (string)
+<strong>$file</strong>   - the font files location; VERY IMPORTANT: please include the full path except the file extensions; the mixin will generate the code using the 4 @font-face formats: eot, ttf, woff and svg; ex: http://www.mywebsite.com/fonts/font-file (string)
+<strong>$cache</strong>  - the cache variable; should be updated everytime you make changes in the font file (string)
 
 All the icon classes are auto generated from the $font-icons map, so you only have to add them there.
 
