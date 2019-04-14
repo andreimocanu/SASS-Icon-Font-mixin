@@ -2,7 +2,7 @@
 
 An easy to use mixin for generating icon fonts (font css and icon classes).
 
-If you use an app like iconmoon, you can export your code as SASS, but that code is not very optimized.
+If you use an app like iconmoon to create your custom icon font, you can export the css also in .scss format, but that code is not very optimized.
 
 I created a very handful way of generating the code so you can save a lot of time.
 
