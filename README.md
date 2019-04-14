@@ -12,9 +12,13 @@ The mixin will generate 2 chunks of code:
 2. The CSS classes used by the font
 
 <h3>Options</h3>
+
 <strong>$map</strong> - the map that contains the font icons
+
 <strong>$class</strong> - the font class name; ex: icon
+
 <strong>$family</strong> - the font family name; ex: mocanu
+
 <strong>$file</strong> - the font files location; VERY IMPORTANT: please include the full path except the file extensions; the mixin will generate the code using the 4 @font-face formats: eot, ttf, woff and svg; ex: http://www.mywebsite.com/fonts/font-file
 
 <strong>$cache</strong> - the cache variable; should be updated everytime you make changes in the font file
