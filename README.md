@@ -34,14 +34,14 @@ $font-icons: (
 	next : '\e902',
 	prev : '\e903',
 );
-@include font-icons('icon', $font-icons, 'iconfont', 'http://www.mywebsite.com/fonts/font-file', 'vi573');
+@include font-icons($font-icons, 'icon', 'my-font', 'http://www.mywebsite.com/fonts/font-file', 'vi573');
 </pre>
 
 <h3>Result</h3>
 
 <pre>
 @font-face {
-	font-family: 'iconfont';
+	font-family: 'my-font';
 	src: url('http://www.mywebsite.com/fonts/font-file.eot?#vi573');
 	src: url('http://www.mywebsite.com/fonts/font-file.eot?#vi573#iefix') format('embedded-opentype'),
 	     url('http://www.mywebsite.com/fonts/font-file.ttf?#vi573') format('truetype'),
@@ -49,7 +49,7 @@ $font-icons: (
 	     url('http://www.mywebsite.com/fonts/font-file.svg?#vi573#dreamstime') format('svg');
 }
 .icon {
-    font-family: 'iconfont' !important;
+    font-family: 'my-font' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
