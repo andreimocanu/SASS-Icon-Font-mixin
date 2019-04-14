@@ -16,7 +16,7 @@
 ///     next : '\e902',
 ///     prev : '\e903',
 ///   );
-///   @include font-icons(icon, $font-icons, font-family, 'http://www.mywebsite.com/fonts/font-file', vi573);
+///   @include font-icons($font-icons, icon, font-family, 'http://www.mywebsite.com/fonts/font-file', vi573);
 ///
 
 @mixin font-icons($map, $class, $family, $file, $cache) {
